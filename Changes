@@ -1,5 +1,10 @@
 Revision history for Acme-PERLANCAR-Test-Performance
 
+0.02    2016-03-15 (PERLANCAR)
+
+	- [opt] Only check up to sqrt(num) instead of num-1.
+
+
 0.01    2016-03-15 (PERLANCAR)
 
         - First release.
