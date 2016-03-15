@@ -13,7 +13,7 @@ our @EXPORT_OK = qw(primes);
 
 sub _is_prime {
     my $num = shift;
-    for (2..$num-1) {
+    for (2..$num**0.5) {
         return 0 if $num % $_ == 0;
     }
     1;
