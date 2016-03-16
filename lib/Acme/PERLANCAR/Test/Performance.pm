@@ -15,8 +15,11 @@ my @primes;
 
 sub _is_prime {
     my $num = shift;
-    for (2..$num**0.5) {
-        return 0 if $num % $_ == 0;
+    my $sqrt = $num**0.5;
+    for my $i (0..$#primes) {
+        my $fact = $primes[$i];
+        last if $fact > $sqrt;
+        return 0 if $num % $fact == 0;
     }
     1;
 }
