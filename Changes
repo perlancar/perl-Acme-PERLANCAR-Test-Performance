@@ -1,5 +1,10 @@
 Revision history for Acme-PERLANCAR-Test-Performance
 
+0.04    2016-03-16 (PERLANCAR)
+
+        - [opt] Cache previously computed prime numbers.
+
+
 0.03    2016-03-16 (PERLANCAR)
 
 	- [opt] Skip even numbers more early.
