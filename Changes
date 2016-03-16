@@ -1,5 +1,14 @@
 Revision history for Acme-PERLANCAR-Test-Performance
 
+0.03    2016-03-16 (PERLANCAR)
+
+	- [opt] Skip even numbers more early.
+
+        - [Bugfix][doc] Remove extraneous copy-pasted text.
+
+        - Add archive/.
+
+
 0.02    2016-03-15 (PERLANCAR)
 
 	- [opt] Only check up to sqrt(num) instead of num-1.
