@@ -11,6 +11,8 @@ use warnings;
 use Exporter qw(import);
 our @EXPORT_OK = qw(primes);
 
+my @primes;
+
 sub _is_prime {
     my $num = shift;
     for (2..$num**0.5) {
@@ -23,12 +25,21 @@ sub primes {
     my $n = shift;
 
     my @res;
-    my $num = 2;
-    while (1) {
-        last if @res >= $n;
-        push @res, $num if _is_prime($num);
-        $num++;
-        $num++ if $num % 2 == 0;
+    for my $i (1..$n) {
+        if (@primes >= $i) {
+            push @res, $primes[$i-1];
+        } else {
+            my $num = @primes ? $primes[-1]+1 : 2;
+            while (1) {
+                if (_is_prime($num)) {
+                    push @primes, $num;
+                    push @res, $num;
+                    last;
+                }
+                $num++;
+                $num++ if $num % 2 == 0; # quick skip even numbers
+            }
+        }
     }
     @res;
 }
