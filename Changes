@@ -1,5 +1,10 @@
 Revision history for Acme-PERLANCAR-Test-Performance
 
+0.06    2016-03-16 (PERLANCAR)
+
+        - [opt] 'use integer'.
+
+
 0.05    2016-03-16 (PERLANCAR)
 
         - [opt] Only test using prime factors up to sqrt(num).
