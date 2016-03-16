@@ -28,6 +28,7 @@ sub primes {
         last if @res >= $n;
         push @res, $num if _is_prime($num);
         $num++;
+        $num++ if $num % 2 == 0;
     }
     @res;
 }
