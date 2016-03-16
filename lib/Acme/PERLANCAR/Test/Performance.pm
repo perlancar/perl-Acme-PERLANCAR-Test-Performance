@@ -5,6 +5,7 @@ package Acme::PERLANCAR::Test::Performance;
 # VERSION
 
 use 5.010001;
+use integer;
 use strict;
 use warnings;
 
