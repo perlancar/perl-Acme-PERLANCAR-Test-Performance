@@ -43,11 +43,6 @@ multiple module versions).
 In version 0.01 of this module, primes() is slower. Then in 0.02 and later,
 performance is increased.
 
-t has several functions which behave differently
-between releases. I'll call versions X.Y where Y is an odd number as odd
-releases and where Y is an even number as even releases. For example, 0.001 is
-an odd release while 0.002 is an even release.
-
 
 =head1 FUNCTIONS
 
